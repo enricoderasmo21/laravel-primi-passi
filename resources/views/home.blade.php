@@ -8,6 +8,7 @@
 </head>
 <body>
 
+    Welcome {{ $name }} {{ $surname }}
     
 </body>
 </html>

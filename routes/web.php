@@ -18,6 +18,7 @@ Route::get('/', function() {
     $data = [
         'name' => 'Enrico',
         'surname' => "D'Erasmo",
+        'back' => 'img/back-1.jpg'
     ];
 
     return view('home', $data);
@@ -26,16 +27,28 @@ Route::get('/', function() {
 
 Route::get('/new', function() {
 
-    return view('new');
+    $data =[
+        'back' => 'img/back-2.jpg'
+    ];
+
+    return view('new', $data);
 })->name('new');
 
 
 Route::get('/popoular', function() {
 
-    return view('popoular');
+    $data =[
+        'back' => 'img/back-3.jpg'
+    ];
+
+    return view('popoular', $data);
 })->name('popoular');
 
 Route::get('/watchlist', function() {
 
-    return view('watchlist');
+    $data =[
+        'back' => 'img/back-4.jpg'
+    ];
+
+    return view('watchlist', $data);
 })->name('watchlist');

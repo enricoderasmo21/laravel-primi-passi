@@ -23,6 +23,7 @@ a{
     height: 100vh;
 }
 
+
 /* Assets */
 
 
@@ -33,6 +34,8 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
+    z-index: 2;
 
     height: 100px;
 
@@ -80,14 +83,28 @@ a{
 /* Main */
 
 .container-main{
-    padding: 30px;
+    width: 100vw;
+    height: calc(100vh - 100px - 120px);
 
     font-size: 3em;
     font-weight: bold;
     text-align: center;
 
+    overflow: hidden;
 }
 
+.container-main img{
+    width: 100%;
+}
+
+.text{
+    position: absolute;
+    left: 50%;
+    top: 47%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+}
 /* /Main */
 
 
@@ -101,7 +118,7 @@ a{
 
     padding: 20px;
 
-    height: 200px;
+    height: 120px;
 
     background-color: black;
 }

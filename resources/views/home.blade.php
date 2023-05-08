@@ -21,7 +21,10 @@
         <x-header/>
     
         <div class="container-main">
-            Benvenuto {{$name}} {{$surname}}
+            <img src="{{$back}}" alt="">
+            <div class="text">
+                Benvenuto {{$name}} {{$surname}}
+            </div>
         </div>
     
         <x-footer/>

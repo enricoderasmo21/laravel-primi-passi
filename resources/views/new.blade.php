@@ -20,9 +20,13 @@
     
     <div class="container">
         <x-header/>
-    
+
+        
         <div class="container-main">
-            New
+            <img src="{{$back}}" alt="">
+            <div class="text">
+                New
+            </div>
         </div>
     
         <x-footer/>

@@ -21,7 +21,10 @@
         <x-header/>
     
         <div class="container-main">
-            Popoular
+            <img src="{{$back}}" alt="">
+            <div class="text">
+                Popoular
+            </div>
         </div>
     
         <x-footer/>

@@ -21,7 +21,10 @@
         <x-header/>
     
         <div class="container-main">
-            Watchlist
+            <img src="{{$back}}" alt="">
+            <div class="text">
+                Watchlist
+            </div>
         </div>
     
         <x-footer/>

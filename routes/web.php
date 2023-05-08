@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function() {
 
     $data = [
         'name' => 'Enrico',
@@ -21,4 +21,21 @@ Route::get('/', function () {
     ];
 
     return view('home', $data);
-});
+})->name('home');
+
+
+Route::get('/new', function() {
+
+    return view('new');
+})->name('new');
+
+
+Route::get('/popoular', function() {
+
+    return view('popoular');
+})->name('popoular');
+
+Route::get('/watchlist', function() {
+
+    return view('watchlist');
+})->name('watchlist');

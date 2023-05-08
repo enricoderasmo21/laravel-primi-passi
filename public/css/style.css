@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Ubuntu', sans-serif;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100vh;
+}
+
+/* Assets */
+
+
+
+/* Header */
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    height: 100px;
+
+    background-color: white;
+
+    box-shadow: 4px 10px 20px rgba(0, 0, 0, .6);
+}
+
+#logo-container img{
+    height: 100%;
+}
+
+#link-container{
+    display: flex;
+    align-items: center;
+}
+
+#link-container #link-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+
+    height: 100%;
+}
+
+#link-container #link-list .link{
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all ease-in-out .1s;
+}
+
+#link-container #link-list .link:hover{
+
+    border-bottom: 3px solid  black;
+
+    transform: scale(1.1);
+
+}
+
+/* /Header */
+
+/* Main */
+
+.container-main{
+    padding: 30px;
+
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+/* /Main */
+
+
+/* Footer */
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 20px;
+
+    height: 200px;
+
+    background-color: black;
+}
+
+#social-container{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+#social-container i{
+    color: white;
+
+    font-size: 1.4em;
+
+    cursor: pointer;
+
+    transition: all ease-in-out .2s;
+}
+
+#social-container i:hover{
+    transform: scale(1.6);
+
+}
+
+#copyright{
+    color: grey;
+
+    font-size: 0.8em;
+}
+
+/* /Footer */

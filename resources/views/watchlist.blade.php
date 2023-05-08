@@ -16,12 +16,12 @@
     <title>Laravel primi passi</title>
 </head>
 <body>
-
+    
     <div class="container">
         <x-header/>
     
         <div class="container-main">
-            Benvenuto {{$name}} {{$surname}}
+            Watchlist
         </div>
     
         <x-footer/>
